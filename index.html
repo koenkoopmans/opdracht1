@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>opdracht 14</title>
+    <script>
+        //Algemene definitie van een website (de blauwdruk)
+        const website = {
+            shownaam: function (){
+                return `De naam van deze site is ${this.name}`;
+            }
+        };
+        // Factory function 'site_fact' kan nieuwe website-objecten genereren
+        // Hoe werkt onderstaande regel?
+        const site_fact = (naam) => Object.assign(Object.create(website), {naam:
+        name});
+        // Genereer een nieuwe site
+        const coolsite = site_fact('CoolSite');
+        // Toon de naam
+        console.log(coolsite.shownaam());
+
+        class bal {
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
